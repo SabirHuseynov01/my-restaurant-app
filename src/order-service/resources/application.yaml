@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: order-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/orders_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: order-consumer-group
+      key-deserializer: org.apache.kafka.common.serialization.StringSerializer
+      value-deserializer: org.apache.kafka.support.serializer.JsonSerializer
+
+server:
+  port: 8082
+
+client:
+  urls:
+    menu-service: http://localhost:8081/api/v1/menu-items

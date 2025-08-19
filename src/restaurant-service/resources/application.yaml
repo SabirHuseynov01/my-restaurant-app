@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  application:
+   name: restaurant-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/restaurant_db
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+
