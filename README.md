@@ -1,10 +1,13 @@
 My Restaurant App 🍽️
+
 My Restaurant App is a demonstration and educational project that showcases a microservices architecture by consolidating four Java-based services into a single monorepo. It is designed for rapid prototyping, integration testing, and hands-on learning of distributed systems.
 
 🚀 Overview & Architecture
+
 The project splits the core logic of a restaurant ecosystem into specialized, decoupled services. Each service is independently deployable but shares a common root configuration for ease of local development.
 
 Microservices Breakdown:
+
 delivery-service: Handles logistics, courier assignments, and real-time order tracking.
 
 notification-service: Manages outgoing communications (Email, SMS, Push notifications).
@@ -14,6 +17,7 @@ order-service: The core workflow engine managing the lifecycle of a customer ord
 restaurant-service: Maintains the catalog of restaurants, menus, and item availability.
 
 🛠️ Tech Stack
+
 Language: Java 17+
 
 Framework: Spring Boot 3.x
