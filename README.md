@@ -1,33 +1,36 @@
 # My Restaurant App
 
-## Overview
-This repository is a main project that brings together four different Java projects related to restaurant management. Each project represents a different functionality and is organized under separate folders. The project aims to provide a foundation for developers who want to develop restaurant applications.
+A monorepo containing four Java microservices for a sample restaurant management system:
+- `delivery-service` — customer delivery/order tracking
+- `notification-service` — sends notifications (email/SMS/push)
+- `order-service` — handles order lifecycle and business logic
+- `restaurant-service` — restaurant data and menu management
 
-## Project Structure
-- **delivery-service/**: [Short description, e.g., “Customer order system”]
-- **notification-service/**: [Short description, e.g., “Notification Service”]
-- **order-service/**: [Short description, e.g., “Order Service”]
-- **restaurant-service/**: [Short description, e.g., “Restaurant Service”]
+> Short, practical guide to getting the project running locally and understanding structure.
 
-## Installation
-1. Clone the repository:
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Quickstart](#quickstart)
+- [Project structure](#project-structure)
+- [How to run a service](#how-to-run-a-service)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- [Docker & Deployment](#docker--deployment)
+- [Contributing](#contributing)
+- [License & Contact](#license--contact)
+
+## Prerequisites
+- Java 17 (or the Java version your services target). Adjust if you use Java 11/21.
+- Maven or Gradle (depending on the build files present in the repo).
+- Git
+
+Tip: Ensure `JAVA_HOME` points to the chosen JDK.
+
+## Quickstart (local)
+1. Clone the repo:
 ```bash
-   git clone https://github.com/SabirHuseynov01/my-restaurant-app.git
-
-
-
-
-### Customization Tips
-- **Project Description:** Write a short and clear description of what each project in each folder does. For example, if `project1` is an order system, specify this.
-- **Images:** If you have screenshots (e.g., output while working in IntelliJ), you can add them using `![Description](image-name.png)`. Upload the images to the repo root.
-- **Code Example:** If you want to add a useful Java code example, use a code block (` ```java `) in Markdown.
-- **Color and Format:** Use headings (`#`, `##`) and lists (`-`) to make it readable.
-
-### Adding with IntelliJ
-1. After creating the `README.md` file, commit it in IntelliJ using `VCS > Commit`.
-2. Write a message, for example: “Comprehensive README.md added.”
-3. Send it to GitHub using `VCS > Push`.
-
+git clone https://github.com/SabirHuseynov01/my-restaurant-app.git
+cd my-restaurant-app
 ### Result
 With this README, your project will be both more comprehensive and user-friendly. When you open it on GitHub, you'll see a nice description page instead of the “Add a README” button. If there's a specific section you'd like to add (e.g., screenshots, technical details), let us know, and we'll add it right away! 😊
 
